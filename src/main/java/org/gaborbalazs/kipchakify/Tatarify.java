@@ -7,6 +7,6 @@ public class Tatarify implements Kipchakify {
         if (s == null || s.length() < 1) {
             throw new KipchakifyException("Cün nüt küpchüküfy!");
         }
-        return s.replaceAll("a|e|i|o|u", "ü");
+        return s.replaceAll("[aáeéiíoóöőuúű]", "ü").replaceAll("[AÁEÉIÍOÓÖŐUÚŰ]", "Ü");
     }
 }
