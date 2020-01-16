@@ -1,6 +1,9 @@
-package org.gaborbalazs.kipchakify;
+package org.gaborbalazs.tatarify;
 
-public class Tatarify implements Kipchakify {
+import org.gaborbalazs.kipchakify.KipchakifyException;
+import org.gaborbalazs.kipchakify.KipchakifyService;
+
+public class TatarifyService implements KipchakifyService {
 
     @Override
     public String kipchakify(String s) throws KipchakifyException {

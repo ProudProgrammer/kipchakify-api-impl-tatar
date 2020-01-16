@@ -1,18 +1,19 @@
-package org.gaborbalazs.kipchakify;
+package org.gaborbalazs.tatarify;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.gaborbalazs.kipchakify.KipchakifyException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class TatarifyTest {
+class TatarifyServiceTest {
 
-    private Tatarify underTest;
+    private TatarifyService underTest;
 
     @BeforeEach
     void setUp() {
-        underTest = new Tatarify();
+        underTest = new TatarifyService();
     }
 
     @Test
@@ -35,6 +36,7 @@ class TatarifyTest {
         Class expectedException = KipchakifyException.class;
 
         // WHEN
+
         // THEN
         assertThrows(expectedException, () -> underTest.kipchakify(textToKipchakify));
     }
@@ -46,6 +48,7 @@ class TatarifyTest {
         Class expectedException = KipchakifyException.class;
 
         // WHEN
+
         // THEN
         assertThrows(expectedException, () -> underTest.kipchakify(textToKipchakify));
     }
